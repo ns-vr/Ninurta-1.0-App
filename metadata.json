@@ -1,0 +1,8 @@
+{
+  "name": "Ninurta 1.0",
+  "description": "Ninurta is an AI-powered platform that personalizes learning by assessing knowledge, filling gaps, and offering tailored content—notes, quizzes, videos, and more. It turns studying into a fun, gamified journey while tracking progress.",
+  "requestFramePermissions": [
+    "microphone",
+    "geolocation"
+  ]
+}

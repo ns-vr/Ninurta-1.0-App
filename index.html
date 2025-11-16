@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ninurta 1.0 - Transform How You Learn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'royal-purple': '#6B46C1',
+              'gold': '#FBBF24',
+              'midnight-blue': '#1A202C',
+              'slate': '#2D3748',
+              'teal-accent': '#38B2AC',
+              'blue-accent': '#4299E1',
+              'pink-accent': '#ED64A6',
+              'soft-white': '#F7FAFC',
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+        :root { /* Default Theme Fallback */
+            --bg-primary: #1A202C;
+            --bg-secondary: #242c3b;
+            --bg-card: #2D3748;
+            --bg-input: #4A5568;
+            --text-primary: #F7FAFC;
+            --text-secondary: #A0AEC0;
+            --color-accent: #FBBF24;
+            --color-accent-text: #1A202C;
+            --border-color: #4A5568;
+            --border-accent: #FBBF24;
+        }
+        .theme-default {
+            --bg-primary: #1A202C;
+            --bg-secondary: #242c3b;
+            --bg-card: #2D3748;
+            --bg-input: #4A5568;
+            --text-primary: #F7FAFC;
+            --text-secondary: #A0AEC0;
+            --color-accent: #FBBF24;
+            --color-accent-text: #1A202C;
+            --border-color: #4A5568;
+            --border-accent: #FBBF24;
+        }
+        .theme-crimson {
+            --bg-primary: #2d1a20;
+            --bg-secondary: #4a2d34;
+            --bg-card: #5e3a42;
+            --bg-input: #754d56;
+            --text-primary: #fee2e2;
+            --text-secondary: #fca5a5;
+            --color-accent: #ef4444;
+            --color-accent-text: #fff;
+            --border-color: #754d56;
+            --border-accent: #ef4444;
+        }
+        .theme-forest {
+            --bg-primary: #1a2d20;
+            --bg-secondary: #2d4a34;
+            --bg-card: #3a5e42;
+            --bg-input: #4d7556;
+            --text-primary: #e2fee2;
+            --text-secondary: #a5fca5;
+            --color-accent: #4ade80;
+            --color-accent-text: #1a2d20;
+            --border-color: #4d7556;
+            --border-accent: #4ade80;
+        }
+        .theme-ocean {
+            --bg-primary: #1a202d;
+            --bg-secondary: #2d344a;
+            --bg-card: #3a425e;
+            --bg-input: #4d5675;
+            --text-primary: #e2e2fe;
+            --text-secondary: #a5a5fc;
+            --color-accent: #60a5fa;
+            --color-accent-text: #1a202d;
+            --border-color: #4d5675;
+            --border-accent: #60a5fa;
+        }
+        @keyframes bobbing {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-4px);
+            }
+        }
+        .word-shooter-word {
+            animation: bobbing 2.5s ease-in-out infinite;
+        }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.1",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.553.0",
+    "immer": "https://aistudiocdn.com/immer@^10.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-midnight-blue text-soft-white">
+    <div id="root"></div>
+  </body>
+</html>
